@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body    {
+    background-color: #EEEEEE;
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+header  {
+    background-color: #CF2B2B;
+
+    height: 92px;
+
+    left: 0;
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+}
+
+.header-content {
+    margin: 8px 0 0 24px;
+}
+
+.header-content h1   {
+    color: #FFFFFF;
+
+    font-family: 'Righteous', cursive;
+
+    font-size: 44px;
+}
+
+.header-content p   {
+    color: #FFFFFF;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    padding-top: 8px;
+}
