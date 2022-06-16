@@ -6,7 +6,7 @@
 
 body    {
     background-color: #EEEEEE;
-    
+
     font-family: 'Roboto', sans-serif;
 }
 
@@ -44,4 +44,44 @@ header  {
     font-weight: 400;
 
     padding-top: 8px;
+}
+
+footer  {
+    align-items: center;
+
+    background-color: #FFFFFF;
+
+    bottom: 0;
+
+    display: flex;
+
+    height: 92px;
+
+    justify-content: center;
+
+    position: fixed;
+
+    right: 0;
+
+    width: 100%;
+}
+
+.btn button     {
+    background-color: #CBCBCB;
+
+    border: none;
+
+    border-radius: 50px;
+
+    color: #FFFFFF;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+    height: 61px;
+
+    text-align: center;
+
+    width: 364px;
 }
