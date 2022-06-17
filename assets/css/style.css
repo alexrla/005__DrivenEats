@@ -20,6 +20,8 @@ header  {
     top: 0;
 
     width: 100%;
+
+    z-index: 1;
 }
 
 .header-content {
@@ -95,6 +97,8 @@ main    {
 
     padding: 10px;
 
+    position: relative;
+
     width: 172px;
 }
 
@@ -144,7 +148,19 @@ main    {
     font-weight: 400;
 }
 
-.bebidas, .sobremesas   {
+.icon   {
+    bottom: 5px;
+
+    color: #6BB92F;
+
+    font-size: 20px;
+
+    position: absolute;
+
+    right: 10px;
+}
+
+.opcoesBebidas, .opcoesSobremesas   {
     margin-top: 27px;
 }
 
@@ -169,8 +185,6 @@ footer  {
 }
 
 .btn button     {
-    background-color: #CBCBCB;
-
     border: none;
 
     border-radius: 50px;
@@ -188,6 +202,152 @@ footer  {
     text-align: center;
 
     width: 364px;
+}
+
+.overlay-2    {
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    display: flex;
+
+    height: 100vh;
+
+    justify-content: center;
+
+    left: 0;
+    
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    z-index: 2;
+}
+
+.pedido {
+    align-items: center;
+
+    background-color: #50D074;
+
+    border-radius: 9px;
+
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    height: 377px;
+
+    width: 90%;
+}
+
+.pedido > p   {
+    color: #FFFFFF;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    padding-top: 21px;
+}
+
+.pedido a  {
+    color: #FFFFFF;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-top: 15px;
+}
+
+.pedido a:hover     {
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+
+.informacoes-pedido {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-top: 28px;
+
+    width: 90%;
+}
+
+.pedido-opcao   {
+    display: flex;
+
+    color: #FFFFFF;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 22px;
+
+    font-weight: 400;
+
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.pedido-total   {
+    font-weight: 700;
+}
+
+.fechar-pedido  {
+    background-color: #FFFFFF;
+
+    border: none;
+
+    border-radius: 100px;
+
+    color:  #50D074;
+
+    cursor: pointer;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    height: 52px;
+
+    margin-top: 25px;
+
+    width: 90%;
+}
+
+.btn-gray   {
+    background-color: #CBCBCB;
+}
+
+.none   {
+    display: none;
+}
+
+.addBorder  {
+    border-color: #6BB92F;
+}
+
+.addColor   {
+    background-color: #6BB92F;
+
+    cursor: pointer;
 }
 
 ::-webkit-scrollbar {
