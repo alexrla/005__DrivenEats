@@ -163,14 +163,18 @@ function fazerPedido()  {
         
         document.querySelector(".overlay-2").classList.remove("none");
 
-        str = `Olá, gostaria de fazer o pedido:\n\n- Prato: ${informacoes[0].nomePrato}\n\n- Bebida: ${informacoes[1].nomeBebida}\n\n- Sobremesa: ${informacoes[2].nomeSobremesa}\n\nTotal: ${precoExibirFinal}`;
+        const nome = prompt("Informe o seu seu nome:");
+
+        const endereco = prompt("Informe o seu endereço:");
+
+        str = `Olá, gostaria de fazer o pedido:\n\n- Prato: ${informacoes[0].nomePrato}\n\n- Bebida: ${informacoes[1].nomeBebida}\n\n- Sobremesa: ${informacoes[2].nomeSobremesa}\n\nTotal: ${precoExibirFinal}\n\nNome: ${nome}\nEndereço: ${endereco}`;
     }
 }
 
 function finalizarPedido()  {
     const myStr = encodeURIComponent(str);
 
-    const url = `https://wa.me/5582981567994?text=${myStr}`;
+    const url = `https://wa.me/5599123456789?text=${myStr}`;
 
     window.open(url);
 }
